@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <title>QR App</title>
+</head>
+
+<body class="bdy bg-primary-subtle">
+  <nav class="navbar bg-dark">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1 text-light text-center w-100">QR Generator App</span>
+    </div>
+  </nav>
+
+  <div class="container p-5">
+    <h2 class="display-6 text-center mb-4 fs-3">
+      Enter Text And Select Size To Generate QR
+    </h2>
+    <form>
+      <input type="text" class="form-control" placeholder="Enter Text Here..." required />
+      <select name="size" id="size" class="form-control my-2">
+        <option value="100x100">Small</option>
+        <option value="200x200">Medium</option>
+        <option value="300x300">Large</option>
+        <option value="400x400">Extra Large</option>
+
+      </select>
+      <button class="btn btn-success fs-5 w-100">Generate</button>
+    </form>
+
+    <div class="d-flex w-100 align-items-center justify-content-center">
+      <!-- <img src="./e4af9f0025a8ce68bee2cf5a1360a501.gif" alt="" class="img-fluid my-5" /> -->
+
+      <img src="./qr-code-on-smartphone.png" alt="" class="img-fluid my-5" />
+    </div>
+    <div class="d-flex align-items-center justify-content-center">
+      <button class="download btn btn-primary mb-3">Download QR Code</button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
